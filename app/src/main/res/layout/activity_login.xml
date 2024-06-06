@@ -2,90 +2,107 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/MainBg"
-    tools:context=".LoginActivity">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic__spoting_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/notosanskr_semibold"
+            android:text="로그인"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanskr_regular"
+            android:text="회원 서비스 이용을 위해 로그인 해주세요."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/username_input"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:textColorHint="@color/white"
-            android:background="@drawable/rounded_corner"
-            android:inputType="text"
-            android:padding="18dp"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            tools:ignore="LabelFor" />
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_box"
+            android:fontFamily="@font/notosanskr_regular"
+            android:hint="이메일을 입력하세요"
+            android:textColorHint="@color/edittext_text_color"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/password_input"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="16dp"
-            android:hint="Password"
-            android:textColorHint="@color/white"
-            android:background="@drawable/rounded_corner"
-            android:inputType="text"
-            android:padding="18dp"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            tools:ignore="LabelFor,TextFields" />
+            android:background="@drawable/edittext_box"
+            android:fontFamily="@font/notosanskr_regular"
+            android:hint="비밀번호를 입력하세요"
+            android:textColorHint="@color/edittext_text_color"
+            android:textSize="14sp" />
 
-        <Button
-            android:id="@+id/signIn_btn"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@drawable/login_btn"
-            android:padding="16dp"
-            android:text="@string/Sign_in"
-            android:textColor="@color/PremiumBtn"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="16dp"
-            android:text="Forget password?"
-            android:textColor="@color/white"
-            android:textSize="12sp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center"
+            android:gravity="end"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have account?"
-                android:textColor="@color/white"
-                android:textSize="12sp"/>
+                android:layout_gravity="start"
+                android:fontFamily="@font/notosanskr_light"
+                android:text="비밀번호 찾기"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
             <TextView
                 android:id="@+id/SignUp_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="end"
                 android:layout_marginStart="15dp"
-                android:text="Sign up"
-                android:textColor="@color/PremiumBtn"
+                android:fontFamily="@font/notosanskr_light"
+                android:text="회원가입"
+                android:textColor="@color/ThemeColor"
                 android:textSize="12sp" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/signIn_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/login_btn"
+            android:fontFamily="@font/notosanskr_regular"
+            android:text="이메일로 로그인"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

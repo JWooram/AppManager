@@ -8,8 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="NavTextColor">#FF7D8392</color>
-    <color name="NavBottomBar">#FF1E2023</color>
-    <color name="MainBg">#FF121415</color>
-    <color name="PremiumBtn">#FF6FEAC8</color>
+    <color name="edittext_text_color">#FF828282</color>
+    <color name="edittext_stroke_color">#FFEDEDED</color>
+    <color name="MainBg">#FFFFFFFF</color>
+    <color name="PremiumBtn">#FF008489</color>
     <color name="Subtext">#FFC9CBD0</color>
+    <color name="ThemeColor">#FF248A3D</color>
+    <color name="BottomNavItem">#FFD9D9D9</color>
+    <color name="first_function">#FF19CCDF</color>
+    <color name="second_function">#FFF8A954</color>
+    <color name="third_function">#FF0EABEF</color>
+    <color name="fourth_function">#FFB874E3</color>
+
 </resources>
